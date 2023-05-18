@@ -82,8 +82,26 @@ p {
   margin: 10px;
   border-radius: 5px;
 }
-.positioned {
+/* .positioned {
   position: relative;
+  background: rgba(255, 84, 104, 0.3);
+  border: 2px solid rgb(255, 84, 104);
+  top: 30px;
+  left: 30px;
+} */
+
+/* Position Absolute */
+/* .positioned {
+  position: absolute;
+  background: rgba(255, 84, 104, 0.3);
+  border: 2px solid rgb(255, 84, 104);
+  top: 30px;
+  left: 30px;
+} */
+
+/* Position Fixed */
+.positioned {
+  position: fixed;
   background: rgba(255, 84, 104, 0.3);
   border: 2px solid rgb(255, 84, 104);
   top: 30px;

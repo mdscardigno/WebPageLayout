@@ -31,8 +31,8 @@
     <p>I am a basic block level element.</p>
 
     <p>
-      Relative positioning allows you to offset an item from the position in
-      normal flow it would have by default. <br /><br />
+      <em>Relative positioning</em> allows you to offset an item from the
+      position in normal flow it would have by default. <br /><br />
       means you could achieve a task such as moving an icon down a bit so it
       lines up with a text label.<br /><br />
       To do this, we could add the following rule to add relative
@@ -51,6 +51,43 @@
         positioning of the element.</em
       >
     </p>
+    <p>
+      <em>Absolute positioning</em> is used to completely remove an element from
+      the normal flow and place it using offsets from the edges of a containing
+      block. We could add the following CSS rule to implement absolute
+      positioning.<br /><br />
+      This is very different! The positioned element has now been completely
+      separated from the rest of the page layout and sits over the top of it.<br /><br />
+      The other two paragraphs now sit together as if their positioned sibling
+      doesn't exist.<br /><br />
+      The top and left properties have a different effect on absolutely
+      positioned elements than they do on relatively positioned elements.<br /><br />
+      In this case, the offsets have been calculated from the top and left of
+      the page.<br /><br />
+      It is possible to change the parent element that becomes this container,
+      and we will take a look at that later.
+    </p>
+    <p>
+      <em>Fixed positioning</em> removes our element from document flow in the
+      same way as absolute positioning.<br /><br />
+      However, instead of the offsets being applied from the container, they are
+      applied from the viewport.<br /><br />
+      As the item remains fixed in relation to the viewport, we can create
+      effects such as a menu that remains fixed as the page scrolls beneath
+      it.<br /><br />
+      For this example, our HTML is three paragraphs of text so that we can
+      cause the page to scroll and a box to which we will give position: fixed.
+    </p>
+    <p>
+      <em>Sticky positioning</em> Sticky positioning is the final positioning
+      method that we have at our disposal.<br /><br />
+      It mixes the default static positioning with fixed positioning.<br /><br />
+      When an item has position: sticky, it will scroll in normal flow until it
+      hits offsets from the viewport that we have defined.<br /><br />
+      At that point, it becomes "stuck" as if it had position: fixed applied.
+    </p>
+    <hr />
+    <br /><br />
     <!-- <div id="app"></div> -->
     <script type="module" src="/src/main.ts"></script>
   </body>
